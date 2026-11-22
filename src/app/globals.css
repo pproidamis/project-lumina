@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0F172A;
+  color: #F8FAFC;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes lqmBreathe {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.45;
+  }
+  40% {
+    transform: scale(1.35);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0.45;
+  }
+}
+
+.animate-lqm-breathe {
+  animation: lqmBreathe 10s ease-in-out infinite;
+}
