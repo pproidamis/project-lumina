@@ -103,7 +103,7 @@ export async function POST(req: NextRequest) {
     const completion = await client.chat.completions.create({
       model: 'openai/gpt-oss-120b',
       temperature: 0.45,
-      max_tokens: 350,
+      max_tokens: 900,
       response_format: { type: 'json_object' },
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
