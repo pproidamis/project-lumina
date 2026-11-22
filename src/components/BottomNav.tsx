@@ -8,7 +8,7 @@ export function BottomNav() {
   const pathname = usePathname();
 
   const items = [
-    { href: '/crisis', label: 'Cockpit', icon: ShieldAlert, active: pathname === '/' || pathname.startsWith('/crisis') },
+    { href: '/', label: 'Cockpit', icon: ShieldAlert, active: pathname === '/' || pathname.startsWith('/crisis') },
     { href: '/repair/latest', label: 'Repair', icon: HeartHandshake, active: pathname.startsWith('/repair') },
     { href: '/patterns', label: 'Patterns', icon: BarChart3, active: pathname.startsWith('/patterns') },
     { href: '/profile', label: 'Vault', icon: UserCog, active: pathname.startsWith('/profile') },
